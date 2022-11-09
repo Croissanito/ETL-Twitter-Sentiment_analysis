@@ -1,4 +1,4 @@
-# ETL-Twitter-Sentiment_analysis
+# ETL Twitter - Sentiment analysis with Kafka and Spark
 
 *(Currently creating the readme...)*
 
