@@ -11,11 +11,12 @@ SELECT AVG(sentiment_score) FROM tweets;
 
 
 -- Tweets with 'some' amount of activity or influence
-SELECT * FROM tweets WHERE 
-						like_count>0 OR 
-						quote_count>0 OR
-						reply_count>0 OR
-						retweet_count>0
+SELECT * FROM tweets 
+WHERE 
+	like_count>0 OR 
+	quote_count>0 OR
+	reply_count>0 OR
+	retweet_count>0
 
 
 -- Average sentiment and public metrics on October 28
