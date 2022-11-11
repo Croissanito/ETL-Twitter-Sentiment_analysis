@@ -66,8 +66,9 @@ stream = MyStream(bearer_token=bearer_token)
 # https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/integrate/build-a-rule 
 #
 # For our case, we'll search for tweets in english that contain the terms "Twitter" and "Elon Musk"
+# Also, we won't get tweets that contain links. More accurate sentiment analysis.
 ###################################################################################################
-rule = '"Twitter" "Elon Musk" lang:en'
+rule = '"Twitter" "Elon Musk" lang:en -has:links'
 stream.add_rules(tweepy.StreamRule(rule))
 
 
