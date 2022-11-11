@@ -9,6 +9,6 @@ CREATE TABLE IF NOT EXISTS tweets
     reply_count INTEGER,
     retweet_count INTEGER,
     sentiment_score REAL,
-	created_at TIMESTAMP,
+    created_at TIMESTAMP,
     PRIMARY KEY (tweet_id)
 )
